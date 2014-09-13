@@ -1,51 +1,60 @@
+<?php include('config/setup.php'); ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<title><?php echo $page['title'].' | '.$site_title; ?> </title> 
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<?php include('config/css.php');?>
+		
+		<?php include('config/js.php');?>
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-		<!--jQuery CSS-->
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-        
-        <!--FontAwesome-->
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        
-        <!--jQuery -->
-		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-
-		<!--jQuery UI -->
-		<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+       
+		
 	</head>
 
 <body>
     
-    <div class="container">
-          
-         <nav class="navbar navbar-default" role="navigation">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-                
-            </ul>
-        </nav> <!--End Nav-->
-    </div>
-    
-    <div class="container">
-        <h1>Content Area</h1>
-    
-    
-    </div>
+<div id="wrap">
 	
+	
+     <nav class="navbar navbar-default" role="navigation">
+         	
+         	<div class="container">
+	            <ul class="nav navbar-nav">
+	                <li class="active"><a href="#">Home</a></li>
+	                <li><a href="#">About Us</a></li>
+	                <li><a href="#">FAQ</a></li>
+	                <li><a href="#">Contact</a></li>
+	         </div>
+	            </ul>
+        </nav> <!--End Nav-->
+   
+    
+    <div class="container">
+        <h1><?php echo $page['header'];  ?></h1>
+        
+        <p><?php echo $page['body'];?></p>
+    
+    </div>
+    
+</div> <!-- End Wrap-->
+    
+    
+    <footer id="footer">
+    	
+    	
+    	<div class="container">
+    		
+    		<p>This is my footer</p>
+    	</div>
+    	
+    	
+    	
+    </footer>
+	  
 </body>
 </html>
-
-
 
